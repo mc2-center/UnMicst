@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.7.1-gpu
+FROM quay.io/repository/jupyter/tensorflow-notebook:latest
 RUN pip install scikit-image matplotlib tifffile pynvml czifile==2019.7.2 nd2reader==3.2.3 imagecodecs
 
 COPY . /app
